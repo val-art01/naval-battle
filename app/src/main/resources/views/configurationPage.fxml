@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="445.0" prefWidth="420.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label prefHeight="45.0" prefWidth="289.0" text="Configurer le jeu a votre gout" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="400.0">
+                     <children>
+                        <Label prefHeight="54.0" prefWidth="170.0" text="Coordonne de la grille du jeu" />
+                        <Label fx:id="gridSizeError" prefHeight="51.0" prefWidth="233.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="44.0" prefWidth="379.0">
+                     <children>
+                        <Label prefHeight="48.0" prefWidth="131.0" text="Nombre de ligne: " />
+                        <TextField fx:id="numberRow" prefHeight="46.0" prefWidth="131.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="38.0" prefHeight="44.0" prefWidth="379.0">
+                     <children>
+                        <Label prefHeight="48.0" prefWidth="131.0" text="Nombre de Colonne:" />
+                        <TextField fx:id="numberColumn" prefHeight="46.0" prefWidth="131.0" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="259.0" prefWidth="400.0" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="69.0" text="Valider" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

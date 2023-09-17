@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1100.0" styleClass="root" stylesheets="@../assets/css/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="705.0" prefWidth="1100.0" stylesheets="@../assets/css/styles.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox_root">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" left="300.0" right="300.0" top="50.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label prefHeight="92.0" prefWidth="748.0" styleClass="label_title" text="Bataille Naval">
+                     
+                  </Label>
+                  <Button fx:id="humanModeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#modelPageHuman" prefHeight="70.0" prefWidth="385.0" text="Mode Humain">
+                     <styleClass>
+                        <String fx:value="button_home" />
+                        <String fx:value="button_img" />
+                     </styleClass>
+                     </Button>
+                  <Button fx:id="iaModeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#modelPageAI" prefHeight="70.0" prefWidth="385.0" text="Mode IA">
+                     <styleClass>
+                        <String fx:value="button_home" />
+                        <String fx:value="button_img" />
+                     </styleClass>
+                     </Button>
+                  <Button fx:id="optionButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#optionPage" prefHeight="70.0" prefWidth="385.0" text="Option">
+                     <styleClass>
+                        <String fx:value="button_home" />
+                        <String fx:value="button_img" />
+                     </styleClass>
+                     </Button>
+                  <Button fx:id="exitButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitGame" prefHeight="70.0" prefWidth="385.0" text="Quitter">
+                     <styleClass>
+                        <String fx:value="button_home" />
+                        <String fx:value="button_img" />
+                     </styleClass>
+                     </Button>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="62.0" prefWidth="1100.0" styleClass="header" BorderPane.alignment="TOP_RIGHT">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/icon_round.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="48.0" prefWidth="137.0" styleClass="label_header" text="Naval Battle" />
+                  <ImageView fx:id="closeWindow" fitHeight="41.0" fitWidth="50.0" nodeOrientation="INHERIT" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="header_close" HBox.hgrow="NEVER">
+                     <image>
+                        <Image url="@../assets/images/close.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="800.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
