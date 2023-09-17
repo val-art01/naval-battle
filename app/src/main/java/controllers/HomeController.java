@@ -11,7 +11,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-
 public class HomeController {
 
     @FXML private AnchorPane anchorPane;
@@ -55,4 +54,24 @@ public class HomeController {
         new ButtonNavigationManagement(event, "fightPage.fxml");
     }
 
+    @FXML
+    private void optionPage(ActionEvent event) {
+
+        // Parent root;
+        //     try {
+        //         root = FXMLLoader.load(getClass().getResource("/views/configurationPage.fxml"));
+        //         Scene scene = new Scene(root);
+        //         stage = (Stage)((Node)event.getSource()).getScene().getWindow();            
+        //         stage.setTitle("Fenêtre contextuelle");
+        //         // votre code pour invoquer la méthode generate
+        //         stage.initModality(Modality.APPLICATION_MODAL);
+                
+        //         stage.setScene(scene);
+        //         stage.showAndWait();
+        //     }catch (IOException ex) {
+        //         ex.printStackTrace();
+        //     }
+
+        new ButtonNavigationManagement(event, ""); 
+    }
 }
