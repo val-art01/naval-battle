@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1100.0" stylesheets="@../assets/css/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AIController">
+   <children>
+      <BorderPane layoutX="690.0" layoutY="1.0" prefHeight="705.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>           
+            <HBox prefHeight="60.0" prefWidth="1100.0" styleClass="footer">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#EndGame" prefHeight="61.0" prefWidth="178.0" text="Fin Partie">
+                     <styleClass>
+                        <String fx:value="button_img" />
+                        <String fx:value="pull_right_button" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#pullSelectionBox" prefHeight="60.0" prefWidth="170.0" text="Tirer">
+                     <styleClass>
+                        <String fx:value="button_img" />
+                        <String fx:value="pull_right_button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>        
+         </bottom>
+         <right>
+            <VBox prefHeight="576.0" prefWidth="377.0" styleClass="right_vbox" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="61.0" prefWidth="377.0" styleClass="right_vbox_hbox">
+                     <children>
+                        <Label prefHeight="56.0" prefWidth="263.0" styleClass="right_label" text="Distance de Manhattan " />
+                        <Label fx:id="manhattanDistanceLabel" prefHeight="78.0" prefWidth="125.0" styleClass="right_label" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="78.0" prefWidth="363.0" styleClass="right_vbox_hbox">
+                     <children>
+                        <Label prefHeight="68.0" prefWidth="267.0" styleClass="right_label" text="Longueur Bateau  Proche " />
+                        <Label fx:id="closestShipLengthLabel" prefHeight="69.0" prefWidth="74.0" styleClass="right_label" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="17.0" layoutY="275.0" prefHeight="61.0" prefWidth="377.0" styleClass="right_vbox_hbox">
+                     <children>
+                        <Label prefHeight="56.0" prefWidth="178.0" styleClass="right_label" text="Mode Triche" />
+                        <Label prefHeight="56.0" prefWidth="45.0" styleClass="right_label">
+                           <graphic>
+                              <CheckBox fx:id="cheatBox" mnemonicParsing="false" onAction="#cheatModus" prefHeight="46.0" prefWidth="33.0" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>               
+            </VBox>
+         </right>
+         <left>
+            <Pane prefHeight="527.0" prefWidth="49.0" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <VBox prefHeight="117.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="80.0" prefWidth="1360.0" styleClass="header">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/images/icon_round.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="48.0" prefWidth="151.0" styleClass="label_header" text="Naval Battle" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="55.0" prefWidth="1360.0">
+                     <children>
+                        <Button fx:id="backButton" alignment="TOP_RIGHT" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#homePage" prefHeight="41.0" prefWidth="100.0" styleClass="back_button" text="Retourner">
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin></Button>
+                     </children>                     
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="center_vbox" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </BorderPane.margin>
+               <children>
+                  <GridPane fx:id="gridPane" alignment="CENTER" prefHeight="510.0" prefWidth="673.0" styleClass="image_grid">
+                  
+                  </GridPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
