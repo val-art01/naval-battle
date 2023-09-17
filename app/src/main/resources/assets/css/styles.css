@@ -1,0 +1,142 @@
+.root{
+    -fx-background-image:url('../images/background_image.jpg');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.vboxConf{
+    -fx-background-color: rgba(250,250,250,0.8);
+   -fx-background-radius: 10;
+    -fx-spacing:10;
+    -fx-padding:10;
+    -fx-alignment:center;
+}
+
+.header{
+    -fx-padding: 7px 10px 7px 25px ;
+    -fx-spacing: 0px;
+}
+
+.footer{
+    -fx-padding: 0px 0px 5px 160px;
+    -fx-spacing: 50px;
+/*    -fx-alignment:center;*/
+}
+
+.label_header{
+    -fx-padding: 12px 0 0 0;
+    -fx-text-fill: rgba(250, 195, 113, 0.7); /*#f8b247;*/
+    -fx-alignment:center;
+    -fx-font: normal  25px 'fantasy';
+}
+
+.header_close{
+    /* -fx-background-color: rgba(241, 236, 228, 0.904); */
+    /* -fx-margind: 0px 0px 0px 500px ;  */
+}
+
+.vbox_root{
+    -fx-border-color: rgba(247, 191, 107, 0.7);
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+    -fx-padding: 5px ;
+}
+
+.label_title{
+    -fx-padding: 10px 0 0 30;
+    -fx-text-fill: rgba(250, 195, 113, 0.7); /*#f8b247;*/
+    -fx-alignment:center;
+    -fx-font: normal  60px 'fantasy';
+}
+
+.back_button{
+    -fx-background-image:url('../images/back1.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-color: rgba(250, 195, 113, 0.0);
+    -fx-text-fill: rgba(250, 195, 113);
+    -fx-font: normal  15px 'Papyrus';
+    -fx-padding: 0px 0px 5px 5px;
+
+}
+
+.button_home{
+    -fx-background-color: rgba(250, 195, 113, 0.0);
+    -fx-text-fill: rgba(250, 195, 113);
+    -fx-font: normal  30px 'Papyrus';
+    -fx-alignment: center;
+}
+
+.button_img{
+    -fx-background-image:url('../images/picture_button.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.right_vbox{
+    -fx-background-image:url('../images/cardboard_image.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-spacing:20px;
+    -fx-padding:7px;
+}
+
+.right_vbox_hbox{
+    -fx-padding:5px;
+    -fx-spacing:5px;
+}
+
+.right_label{
+    -fx-padding:5px;
+    -fx-margin:5px;
+    -fx-font: normal  22px 'Papyrus';
+    -fx-text-fill: rgba(255, 200, 93);
+}
+
+.pull_right_button{
+    -fx-background-color: rgba(250, 195, 113, 0.0);
+    -fx-text-fill: rgba(250, 195, 113);
+    -fx-font: normal  20px 'Papyrus';
+}
+
+.center_vbox{
+    -fx-padding:10px;
+    -fx-alignment: center;
+}
+
+.image_grid{
+    -fx-background-image:url('../images/grindPane_img.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.grid_label {
+/*    -fx-background-color: rgba(250, 195, 113);  Remplacez "red" par la couleur de votre choix */
+    -fx-text-fill: white; /* Couleur du texte (facultatif) */
+    -fx-alignment: center;
+    -fx-font: normal 15px 'Papyrus';
+}
+
+/* .edge_cell{
+    -fx-border-color: black; 
+    -fx-border-width: 1px; 
+    -fx-background-color: transparent;
+}
+
+.selected_cell {
+    -fx-border-color: black; 
+    -fx-border-width: 1px; 
+    -fx-background-color: yellow;
+    -fx-background-color: yellow;
+}
+
+.deselected_cell {
+    -fx-background-color: transparent;
+} */
+
